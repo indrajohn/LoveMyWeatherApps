@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0288D1</color>
+    <color name="colorPrimaryDark">#01579B</color>
+    <color name="colorAccent">#3dbec9</color>
+    <color name="background_coklat">#5ae47500</color>
+    <color name="background_kuning">#51f8e548</color>
+    <color name="background_hijau">#5ad863</color>
+    <color name="background_Biru">#0288d1</color>
+
+
+    <!--Gradient Biru-->
+    <color name="background_Biru_300">#4FC3F7</color>
+    <color name="background_Biru_400">#29B6F6</color>
+    <color name="background_Biru_500">#03A9F4</color>
+    <color name="background_Biru_600">#039BE5</color>
+    <color name="background_Biru_700">#0288d1</color>
+    <color name="background_Biru_800">#0277BD</color>
+    <color name="background_Biru_900">#01579B</color>
+
+</resources>

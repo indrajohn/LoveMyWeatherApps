@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtCountry"
+            android:textSize="24sp"
+            android:layout_alignTop="@+id/txtCurrentTime"
+            android:layout_alignRight="@+id/txtCelcius"
+            android:layout_alignEnd="@+id/txtCelcius"
+            android:textColor="#ffffff"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageWeather"
+            android:src="@drawable/weather_icon"
+            android:layout_gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rain"
+            android:id="@+id/txtCondition"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/imageWeather"
+            android:layout_alignLeft="@+id/imageWeather"
+            android:layout_alignStart="@+id/imageWeather" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="get at 2005"
+        android:id="@+id/txtCurrentTime"
+            android:textSize="16dp"
+        android:textColor="#ffffff"
+            android:textAlignment="textEnd"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/txtCondition"
+            android:layout_alignStart="@+id/txtCondition" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.3 \u00B0 C"
+        android:id="@+id/txtCelcius"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+            android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:textStyle="bold"
+            android:layout_alignBottom="@+id/imageWeather"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:id="@+id/txtCity"
+            android:layout_above="@+id/txtCelcius"
+            android:layout_alignLeft="@+id/txtCelcius"
+            android:layout_alignStart="@+id/txtCelcius"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edecec">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind"
+                android:id="@+id/textView4"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_300" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/txtWindModerateBreeze"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:layout_span="1"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_300" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_300" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/txtWindWestNorhWest"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:layout_span="1"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_300" />
+        </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cloudiness"
+                    android:id="@+id/textView2"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/background_Biru_400" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:layout_weight="1"
+                    android:id="@+id/txtCloudiness"
+                    android:textSize="24dp"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="5dp"
+                    android:singleLine="false"
+                    android:background="@color/background_Biru_400" />
+            </TableRow>
+
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edecec">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pressure"
+                android:id="@+id/textView8"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_500" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/txtPlessure"
+                android:textSize="24dp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_500" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:id="@+id/textView10"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:layout_column="0"
+                android:background="@color/background_Biru_600" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/txtHumidity"
+                android:textSize="24dp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:layout_column="2"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_600" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edecec">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunrise"
+                android:id="@+id/textView12"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:autoText="false"
+                android:background="@color/background_Biru_700" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:id="@+id/txtSunrise"
+                android:layout_weight="1"
+                android:textSize="24dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:autoText="false"
+                android:background="@color/background_Biru_700" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunset"
+                android:id="@+id/textView14"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_600" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:layout_weight="1"
+                android:id="@+id/txtSunset"
+                android:textSize="24dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_600" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#edecec">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geo coords"
+
+                android:id="@+id/textView16"
+                android:textColor="#ffffff"
+                android:textSize="24dp"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_900" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="New Text"
+                android:layout_weight="1"
+                android:id="@+id/txtGeoCoords"
+                android:textSize="24dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="5dp"
+                android:background="@color/background_Biru_900" />
+        </TableRow>
+    </TableLayout>
+    </RelativeLayout>
+</LinearLayout>
+
